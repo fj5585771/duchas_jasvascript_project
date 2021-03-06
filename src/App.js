@@ -42,6 +42,7 @@ function App() {
       const data = res.data;
           const slice = data.slice(offset, offset + perPage)
           const postData = slice
+          console.log(data);
           setPhotos(postData)
           setPageCount(Math.ceil(data.length / perPage))
   }
@@ -52,7 +53,7 @@ function App() {
 
   const setCoordinates = () => {
     if (photos.length > 0) {
-    console.log("setting coordinates")
+    
     const centerCoords = photos[0].counties[0].coordinates
     setCurrentLocation([centerCoords.latitude, centerCoords.longitude])
     }
@@ -85,7 +86,7 @@ function App() {
 
   const handlePageClick = (e) => {
     const selectedPage = e.selected;
-    console.log(selectedPage);
+    
     setOffset(selectedPage * perPage)
     setCurrentPage(selectedPage)
   };

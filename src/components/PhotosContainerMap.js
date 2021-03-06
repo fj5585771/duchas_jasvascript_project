@@ -18,7 +18,7 @@ const PhotosContainerMap = ({ photos, mapsCentre }) => {
 
     const SetCentre = ({ centre }) => {
         const map = useMap()
-        console.log("map");
+        
         map.setView(centre, 8);
         return null;
     }
@@ -29,13 +29,13 @@ const PhotosContainerMap = ({ photos, mapsCentre }) => {
 
     const markerNodes = photos.map((photo) => {
 
-        console.log("photoslist", photo.locationsIreland[0]);
+        // console.log("photoslist", photo.locationsIreland[0]);
 
 
         if (photo.locationsIreland[0]) {
 
             const coordinates = photo.locationsIreland[0].coordinates
-            console.log("coordinates", coordinates);
+            
 
             let photoYear = null;
             if (photo.date) {
