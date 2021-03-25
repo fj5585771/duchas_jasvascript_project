@@ -6,7 +6,7 @@
 
 ### Project Brief
 
-<p> Interactive browser application which displays information in an interesting way.  This showcases some of the features to be included in the final app
+<p> Interactive browser application which displays information in an interesting way.  This showcases some of the features to be included in the final app </p>
 
 ### MVP
 
